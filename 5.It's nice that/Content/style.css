@@ -1,0 +1,502 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar styling*/
+.navbar{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: #fff;
+}
+.nav-container{
+    margin: auto;
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+}
+.logo{
+    display: flex;
+}
+.logo .big-brand{
+    text-decoration: none;
+    color: #111;
+    padding:0 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.logo .small-brand{
+    text-decoration: none;
+    color: #111;
+    font-size: small;
+    padding: 0 20px;
+}
+.search-container{
+    display: flex;
+}
+.search-container input[type=text]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(95, 90, 90);
+    outline: none;
+    width: 400px;
+}
+.search-container button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background: none;
+    color: #111;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(221, 220, 220);
+    color: rgb(18, 98, 173);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content .row-1{
+    display: flex;
+    background: #fff;
+  }
+  .dropdown-content .row-1 .column{
+      display: block;
+      padding: 40px;
+      width: 200px;
+      height: 300px;
+  }
+  .dropdown-content .row-1.column p{
+      font-size: 15px;
+      font-family: sans-serif;
+      padding: 10px;
+      color: lightgray;
+  }
+  .dropdown-content .row-1 .column a{
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: #111;
+
+  }
+.extra-search{
+  list-style: none;
+  font-size: 25px;
+}
+.extra-search a{
+    color: #111;
+}
+
+.login{
+    list-style: none;
+    font-size: 25px;
+}
+.login a{
+    color: #111;
+}
+
+/*Burger*/
+.menu-btn{
+    margin-left: 10px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger{
+    width: 20px;
+    height: 3px;
+    background: #111;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(46, 23, 23, 0.1);
+    transition: all 0.25s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #111;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.70);
+    transition: all 0.25s ease-in-out;
+}
+.menu-btn_burger::before{
+  transform: translateY(-8px);
+}
+.menu-btn_burger::after{
+   transform: translateY(8px);
+}
+/*Animation burger*/
+.menu-btn.open .menu-btn_burger{
+   transform: translateX(-50px);
+   background: transparent;
+   box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before{
+   transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after{
+   transform: rotate(-45deg) translate(35px, 35px);
+
+}
+#menuBtn {
+    position: relative;
+    display: flex;
+}
+.menu-btn .drop-content{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 5px 0px 6px 7px rgb(160, 153, 153);
+    margin-top: 100px;
+}
+.drop-content .row-2{
+    margin: auto;
+    width: 180%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-content .row-2 .column {
+    padding: 10px;
+    width: 80%;
+    height: 400px;
+}
+.show{
+    display: block;
+}
+
+/*Home */
+.home{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.home .home-row{
+    display: inline-flex;
+}
+.home .home-row .first-column{
+    margin: 30px 0;
+}
+.home .home-row .first-column img{
+    width: 30%;
+}
+.home .home-row .second-column{
+    margin: 30px 0;
+}
+.home .home-row .second-column img{
+    width: 30%;
+}
+.home .home-row .thirth-column{
+    margin: 30px 0;
+}
+.home .home-row .thirth-column img{
+    width: 30%;
+}
+
+/* Gallery style */
+.gallery{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.gallery .row{
+    display: inline-flex;
+}
+.gallery .row .column-1 {
+  padding:0px 5px;
+}
+.gallery .row .column-1 a{
+    text-decoration: none;
+    color: #111;
+    font-family: cursive;
+    margin-top: 20px;
+}
+.gallery .row .column-1 img{
+    width: 300px;
+}
+
+.gallery .row .column-1 a:hover, .gallery .row .column-1 a:focus{
+    color: rgb(18, 98, 173);
+}
+.gallery .row .column-2 video{
+  width: 350px;
+}
+.gallery .row .column-2 a{
+    text-decoration: none;
+    color: #111;
+    font-family: cursive;
+    margin-top: 20px;
+}
+.gallery .row .column-2 a:hover, .gallery .row .column-2 a:focus{
+    color: rgb(18, 98, 173);
+}
+
+/*section static*/
+.static {
+  background: url(/img-video/pexels-vinícius-estevão-2592282.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 30px 0;
+  height: 900px;
+  display: block;
+}
+.static .title{
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+}
+.static .title h1{
+    font-size: 30px;
+    font-weight:lighter;
+}
+.static .title p{
+    color: rgb(100, 99, 99);
+    padding: 20px 0;
+}
+.static .title p button{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(18, 98, 173);
+}
+.static .title p button:hover{
+   background: gray;
+   color: rgb(1, 51, 99);
+}
+.static .row{
+   display: flex;
+   width: 80%;
+   margin: auto;
+}
+.static .row .card-1 {
+    background: #fff;
+    color: #111;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.static .row .card-2 {
+    background: #fff;
+    color: #111;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.static .row .card-3 {
+    background: #fff;
+    color: #111;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.static .row .card-4 {
+    background: #fff;
+    color: #111;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.static .row .card-1 img{
+    width: 200px;
+    height: 200px;
+}
+.static .row .card-2 img{
+    width: 200px;
+    height: 250px;
+}
+.static .row .card-3 img{
+    width: 300px;
+    height: 500px;
+}
+.static .row .card-4 img{
+    width: 200px;
+    height: 200px;
+}
+.static .row .card-1 a{
+    font-family: cursive;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #111;
+}
+.static .row .card-1 a:hover{
+    color: rgb(18, 98, 173)
+ }
+.static .row .card-2 a{
+    font-family: cursive;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #111;
+}
+.static .row .card-2 a:hover{
+    color: rgb(18, 98, 173)
+ }
+.static .row .card-3 a{
+    font-family: cursive;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #111;
+}
+.static .row .card-3 a:hover{
+    color: rgb(18, 98, 173)
+ }
+.static .row .card-4 a{
+    font-family: cursive;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #111;
+}
+.static .row .card-4 a:hover{
+    color: rgb(18, 98, 173)
+ }
+
+ /*Newsletter*/
+.newsletter{
+  width: 80%;
+  margin: auto;
+  display: flex;  
+}
+.newsletter .container{
+    display: flex;
+    margin: 20px ;
+}
+.newsletter .container .newsletter-container{
+    width: 50%;
+    display: block;
+    background: #111;
+    color: #fff;
+    font-family: cursive;
+}
+.newsletter .container .newsletter-container form{
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.newsletter .container .newsletter-container .content{
+    padding: 20px;
+    display: block;
+}
+.newsletter .container .newsletter-container .content h1{
+    padding: 20px 0;
+}
+.newsletter .container .newsletter-container .content input[type=text]{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+.newsletter .container .newsletter-container .content label{
+    display: block;
+    cursor: pointer;
+    width: 30%;
+}
+.newsletter .container .newsletter-container .content input[type=checkbox]{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.newsletter .container .newsletter-container .content input[type=submit]{
+    width: 40%;
+    text-align: start;
+    padding: 15px;
+    cursor: pointer;
+    background: yellow;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.newsletter .container .newsletter-container .content input[type=submit]:hover, .newsletter .container .newsletter-container .content input[type=submit]:focus{
+    background: rgb(224, 224, 52);
+}
+
+.newsletter .container .img-container{
+    width: 50%;
+    background: url(/img-video/newsletter.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Footer*/
+.footer{
+    background: #111;
+    display: block;
+    padding: 50px 0;
+}
+.footer .footer-logo{
+    padding: 30px 0;
+    width: 80%;
+    margin: auto;
+}
+.footer .footer-logo img{
+    width: 10%;
+    border-radius: 100%;
+}
+.footer .row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .row .column{
+    display: block;
+    padding: 5px 20px;
+}
+.footer .row .column h5{
+    margin: auto;
+    color:gray;
+    padding-bottom: 30px;
+}
+.footer .row .column p{
+    color: #fff;
+}
+.footer .row .column a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.footer .small-text{
+    width: 80%;
+    margin: auto;
+    color: gray;
+}
+.footer .small-text p{
+    padding: 40px 0;
+}

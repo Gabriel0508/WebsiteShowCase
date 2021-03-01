@@ -1,0 +1,598 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond' serif;
+}
+
+/*Navbar Styling*/
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 5px 15px 3px rgb(139, 139, 136) ;
+}
+.navbar .wrapper{
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    padding: 0 40px;
+    align-items: center;
+}
+.navbar .logo{
+    display: inline-block;
+}
+.navbar .logo li{
+    list-style: none;
+}
+.navbar .logo li a{
+    text-decoration: none;
+}
+.navbar .logo li .brand1{
+    color: #111;
+    font-size: 10px;
+    padding: 10px 10px;
+}
+.navbar .logo .brand2{
+    font-size: 6px;
+    padding:5px 2px;
+    color: brown;
+    text-transform: uppercase;
+}
+.nav-links {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .nav-links li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navbar .nav-links li a:hover{
+    color: brown;
+}
+.navbar .nav-links .active-links{
+    color: brown;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Dropdown */
+
+.drop-link1 {
+    color: #111;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  /* Dropdown button on hover & focus */
+  .drop-link1:hover, .drop-link1:focus {
+    color: brown;
+  }
+  .dropdown1 {
+    position: relative;
+    display: inline;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 300px;
+    height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.9;
+  }
+  /*Main class*/
+     .dropdown-content1 .main{
+          display: flex;
+          padding: 20px 40px;
+     }
+     .dropdown-content1 .main .main-title{
+         color: gray;
+         font-family: serif;
+         font-weight: unset;
+     }
+     .dropdown-content1 .main button{
+         margin-left: auto;
+         padding: 5px 10px;
+         text-transform: uppercase;
+         background-color: rgb(255, 0, 34);
+         border: 0;
+         color: #fff;
+         cursor: pointer;
+}
+.dropdown-content1 .main button:hover{
+    color: brown;
+    background-color: rgb(205, 230, 231);
+}
+
+    /*Column styling*/
+
+        .row-link {
+            display: flex;
+            padding: 20px;
+
+        }
+         .row-link .column-link img{
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .row-link .column-link p{
+            font-size: 20px;
+            font-family: serif;
+            font-weight: unset;
+            margin-left: auto;
+            color: #fff;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .row-link .column-link p:hover{
+            color: rgb(184, 0, 0);
+        }
+        
+   
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show1 {
+        display:flex;
+      }
+   
+/*link*/
+.drop-link2 {
+    color: #111;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  /* Dropdown button on hover & focus */
+  .drop-link2:hover, .drop-link2:focus {
+    color: brown;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.9;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content2 h1{
+      color: gray;
+      padding: 10px 20px;
+      font-size: 25px;
+      font-weight: unset;
+      }
+  .dropdown-content2 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content2 a:hover {
+      background-color: #fff;
+      color: brown;
+    }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+      display:block;
+    }
+
+.navbar .nav-links form{
+    font-size: 15px;
+    background: rgb(129, 128, 128);
+    opacity: 0.7;
+}
+.navbar .nav-links input{
+    border-radius: 10%;
+    color: black;
+    background: white;
+}
+.navbar .openMenu {
+    position:fixed;
+    color: #111;
+    margin: 600px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.navbar .nav-links .closeMenu{
+    margin: 600px;
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/*First page styling*/
+.home{
+    display: flex;
+    background:url("./Images/home-page.jpg");
+    background-size:cover;
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 80px 60px;
+}
+.home .column-right {
+    opacity: 0.8;
+    width: 650px;
+    height: 700px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 80px 0;
+}
+.column-right .anchors{
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+}
+.column-right .anchors a{
+    text-decoration: none;
+}
+.column-right .anchors .text1{
+    padding: 40px 20px;
+    color: brown;
+    font-size: 10px;
+    font-family: serif;
+}
+.column-right .anchors .text2{
+     color: #111;
+     font-size: 30px;
+     font-family: serif;
+     padding: 40px 20px;
+
+}
+.column-right .anchors .text2:hover{
+    color: rgb(189, 2, 2);
+}
+.column-right .anchors .text3{
+     color: #111;
+     font-size: 30px;
+     font-family: serif;
+     padding: 40px 20px;
+
+}
+.home .column-right button{
+    margin-left: 20px;
+}
+.column-right .btn{
+    color: white;
+    background:rgb(255, 0, 34);
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    text-transform: uppercase;
+}
+.column-right .btn:hover{
+    background: black;
+}
+/*Grid */
+.about{
+    height: 400px;
+}
+.about .title {
+    font-size: 20px;
+    display: flex;
+}
+.about .title p{
+    color: #111;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-top: 0;
+}
+.about .title a{
+    font-size: 15px;
+    font-family: serif;
+    text-decoration: none;
+    color: rgb(194, 193, 193);
+}
+.about .title a:hover{
+    color: brown;
+}
+.about .row {
+    display: flex;
+}
+.about .row .column img{
+    height: 250px;
+    object-fit: cover;
+    padding: 5px 20px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out ;
+}
+.about .row .column img:hover{
+    filter: grayscale(0%);
+}
+.about .row .column p{
+    font-size: 20px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+/*Newsletter styling*/
+.letter {
+    background-color: rgb(229, 239, 240);
+    width: 100%;
+    height: 150px;
+  
+}
+.letter .container form{
+   display: flex;
+   font-size: 30px;
+   padding: 50px 0;
+   justify-content: center;
+}
+.letter .container p{
+    margin: 0 20px;
+    font-family: 'Cormorant Garamond' serif;
+    font-weight: unset;
+    text-transform: uppercase;
+}
+.letter .container .name{
+    width: 200px;
+    margin:0 5px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+.letter .container .email{
+    width: 200px;
+    margin: 0 5px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+.letter .container button {
+    margin: 0 5px;
+    background: brown;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*Footer styling*/
+.footer {
+    background: #111;
+    width: 100%;
+    height: 350px;
+}
+.footer h1{
+    color: gray;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond' serif;
+}
+.footer p{
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+.footer .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 200px;
+}
+.footer .footer-links li{
+    list-style: none;
+}
+.footer .footer-links li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer .footer-links li a:hover{
+    color: gray;
+}
+.footer .icons{
+    text-align: center;
+    
+}
+.footer .icons a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+.footer .icons .facebook{
+    background: rgb(0, 110, 255);
+}
+.footer .icons .pinterest{
+    background:rgb(255, 0, 34);
+}
+.footer .icons .twitter{
+    background:rgb(5, 163, 202);
+}
+.footer .icons .intagram{
+    background:rgb(98, 43, 119);
+}
+.footer .icons .youtube{
+    background:rgb(233, 5, 5);
+}
+
+/*Small footer styling*/
+
+ .small-footer{
+    width: 100%;
+    height: 10vh;
+    background: rgb(0, 0, 0);
+}
+.smallFooter-links {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+.smallFooter-links p{
+    color: gray;
+    font-size: 15px;
+}
+.smallFooter-links li{
+    list-style: none;
+}
+.smallFooter-links li a{
+    padding: 0 20px;
+    color:gray;
+    text-decoration: none;
+}
+.smallFooter-links li a:hover{
+    color: #fff;
+}
+
+/*Responsive*/
+
+@media (max-width: 1496px){
+     .wrapper{
+         padding: 0;
+     }
+     .home {
+         margin: 0;
+     }
+     .home .column-right{
+         width: auto;
+         height: auto;
+     }
+     .about .row .column img{
+         padding: 0;
+        
+     }
+}
+@media (max-width: 1392px){
+    .about .row .column img{
+        width: 300px;    
+    }
+    .navbar .wrapper{
+        padding: 0;
+    }
+    .navbar .logo{
+        display: block;
+        width: 30%;
+    }
+}
+@media (max-width: 1216px){
+    .about .row .column img{
+       width: 250px;
+       padding: 0;
+    }
+}
+@media (max-width: 1017px){
+    .navbar .nav-links{
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+   .navbar .openMenu{
+       display: block;
+   }
+   nav .nav-links .closeMenu {
+      margin: 600px;
+      top: 20px;
+      right: 20px;
+      color: black;
+    }
+}
+@media (max-width: 816px) {
+    .about .row {
+        display: flex;
+    }
+    .about .row .column img{
+        width: 150px;
+        height: 200px;
+        padding: 0;
+     }
+    .letter .container form{
+       font-size: 25px;
+    }
+    .letter .container p{
+        margin: 0;
+    }
+    .letter .container .name{
+        width: 150px;
+        padding: 0;
+    }
+    .letter .container .email{
+        width: 150px;
+        margin: 0 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .letter .container button {
+        margin: 0 15px;
+    }
+    .home {
+        display: flex;
+        background-position: center;
+    }
+}
+@media (max-width: 750px) {
+    .navbar .logo li .brand1{
+        font-size: 10px;
+        padding: 0;
+    }
+    .navbar .logo .brand2{
+        font-size: 8px;
+        padding: 0;
+    }
+    .letter .container form{
+       font-size: 10px;
+    }
+    .letter .container .name{
+      width: 150px;
+      padding: 0;
+     }
+    .letter .container .email{
+      width: 150px;
+      margin: 0 20px;
+      padding: 10px;
+    }
+    .letter .container button {
+      padding: 10px;
+    }  
+}
